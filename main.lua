@@ -72,7 +72,7 @@ local function tableToString(table, depth)
       if type(onlyElement) ~= "table" then
         return "{" .. tostring(onlyElement) .. "}"
       else
-        result = "{" .. tableToString(onlyElement, depth + 1) .. "}"
+        return "{" .. tableToString(onlyElement, depth + 1) .. "}"
       end
     end
     for i, x in ipairs(table) do
