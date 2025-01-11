@@ -96,7 +96,7 @@ local function tableToString(table, depth)
       if type(theOnlyValue) ~= "table" then
         return "{" .. theOnlyKey .. ": " .. tostring(theOnlyValue) .. "}"
       else
-        return "{" .. theOnleyKey .. ": " .. tableToString(theOnlyValue, depth + 1) .. "}"
+        return "{" .. theOnlyKey .. ": " .. tableToString(theOnlyValue, depth + 1) .. "}"
       end
     end
     
